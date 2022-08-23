@@ -1,0 +1,268 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.nav {
+  display: inline-block;
+  width: 100vw;
+  height: 75px;
+  box-shadow: 0 0 4px 0;
+  background-color: white;
+}
+.nav .logo {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  border-radius: 32px;
+}
+.nav img {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  top: 17px;
+  left: 400px;
+  margin: 0px 50px;
+}
+.nav .navmixin {
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  font-family: monospace;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 20px;
+}
+.nav .live {
+  left: -68px;
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  font-family: monospace;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 20px;
+}
+.nav .membership {
+  left: -49px;
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  font-family: monospace;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 20px;
+}
+.nav .plan {
+  left: -43px;
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  font-family: monospace;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 20px;
+}
+.nav .more {
+  left: -7px;
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  font-family: monospace;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 20px;
+}
+.nav .user {
+  position: absolute;
+  top: 27px;
+  left: 87vw;
+}
+.nav h2 {
+  position: absolute;
+  top: 27px;
+  left: 94vw;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+}
+.headersection {
+  width: 100vw;
+  height: 500px;
+}
+.headersection h1 {
+  font-size: 32px;
+  font-family: monospace;
+  position: absolute;
+  left: 90px;
+  top: 110px;
+}
+.headersection .header {
+  width: 90vw;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  left: 5vw;
+  top: 190px;
+}
+.headersection .header .strength {
+  display: inline-block;
+  height: 350px;
+  width: 20vw;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+@keyframes strengthanimation {
+  from {
+    width: 20vw;
+  }
+  to {
+    width: 50vw;
+  }
+}
+@keyframes strengthanimation2 {
+  from {
+    width: 50vw;
+  }
+  to {
+    width: 20vw;
+  }
+}
+@keyframes left {
+  from {
+    position: absolute;
+    left: 20vw;
+    width: 50vw;
+  }
+  to {
+    position: absolute;
+    left: 50vw;
+    width: 20vw;
+  }
+}
+@keyframes left2 {
+  from {
+    position: absolute;
+    left: 40vw;
+    width: 50vw;
+  }
+  to {
+    position: absolute;
+    left: 70vw;
+    width: 20vw;
+  }
+}
+@keyframes right {
+  from {
+    position: absolute;
+    left: 50vw;
+  }
+  to {
+    position: absolute;
+    left: 20vw;
+  }
+}
+@keyframes right2 {
+  from {
+    width: 20vw;
+    position: absolute;
+    left: 70vw;
+  }
+  to {
+    position: absolute;
+    left: 40vw;
+    width: 50vw;
+  }
+}
+.headersection .header .mobility {
+  display: inline-block;
+  position: absolute;
+  left: 20vw;
+  height: 350px;
+  width: 20vw;
+}
+@keyframes mobilityanimation {
+  from {
+    width: 20vw;
+  }
+  to {
+    width: 50vw;
+  }
+}
+@keyframes mobilityanimation2 {
+  from {
+    width: 50vw;
+  }
+  to {
+    width: 20vw;
+  }
+}
+@keyframes a {
+  from {
+    width: 50vw;
+  }
+  to {
+    width: 20vw;
+  }
+}
+.headersection .header .run {
+  display: inline-block;
+  position: absolute;
+  left: 40vw;
+  height: 350px;
+  width: 50vw;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@keyframes runanimation {
+  from {
+    left: 70vw;
+    width: 20vw;
+  }
+  to {
+    left: 40vw;
+    width: 50vw;
+  }
+}
+.headersection .header .strengthh {
+  position: absolute;
+  top: 4vh;
+  left: 4vw;
+  font-family: monospace;
+  font-size: 21px;
+  color: white;
+}
+.headersection .header .mobilityh {
+  position: absolute;
+  top: 4vh;
+  left: 24vw;
+  font-family: monospace;
+  font-size: 21px;
+  color: white;
+}
+.headersection .header .runh {
+  position: absolute;
+  top: 4vh;
+  left: 44vw;
+  font-family: monospace;
+  font-size: 21px;
+  color: white;
+}
+.headersection .header .arrow {
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  top: 4vh;
+  visibility: hidden;
+}

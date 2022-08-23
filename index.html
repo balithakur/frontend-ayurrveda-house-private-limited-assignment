@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web designer project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="navbar">
+        <div class="nav">
+            <img src="download (1).jpg" alt="logo" class="logo">
+            <nav>
+                <img src="live-streaming.png" alt="liveimage">
+                <img src="member-card.png" alt="membership image">
+                <img src="running.png" alt="plan image">
+                <img src="menu.png" alt="more image">
+                <a href="@" class="live">LIVE</a>
+                <a href="@" class="membership">MEMBERSHIPS</a>
+                <a href="@" class="plan">PLANS</a>
+                <a href="@" class="more">MORE</a>
+            </nav>
+            <img src="user (3).png" alt="user" class="user">
+            <h2>Login</h2>
+        </div>
+    </section>
+    <section class="headersection">
+        <h1>Runner's Workout</h1>
+        <div class="header">
+            <img src="images (14).jpeg" alt="strength image" class="strength" id="strength">
+            <img src="pexels-jess-loiterton-7510362 (1).webp" alt="mobility pic" class="mobility" id="mobility">
+            <img src="pexels-nathan-cowley-1199590.jpg" alt="running image" class="run" id="run">
+            <h2 class="strengthh" id="strengthh">Strength</h2>
+            <h2 class="mobilityh" id="mobilityh">Mobility</h2>
+            <h2 class="runh" id="runh">Drills</h2>
+            <img src="circle-chevron-right-solid.svg" alt="sidearrow" class="arrow" id="arrow">
+        </div>
+    </section>
+    <script>
+        let strength = document.getElementById("strength")
+        let mobility = document.getElementById("mobility")
+        let run = document.getElementById("run")
+        let strengthh = document.getElementById("strengthh")
+        let mobilityh = document.getElementById("mobilityh")
+        let runh = document.getElementById("runh")
+        let arrow = document.getElementById("arrow")
+        // use for mouse over
+        strength.onmouseover = () => {
+            // Strength animation
+            strength.style.animationName = "strengthanimation"
+            strength.style.animationDuration = "1s"
+            strength.style.width = "50vw"
+            // mobility animation
+            mobility.style.animationName = "left"
+            mobility.style.animationDuration = "1s"
+            mobility.style.left = "50vw"
+            // Run animation
+            run.style.animationName = "left2"
+            run.style.animationDuration = "1s"
+            run.style.left = "70vw"
+            run.style.width = "20vw"
+            // Use for mobility h2 tag
+            mobilityh.style.transition = "left 1s"
+            mobilityh.style.left = "54vw"
+            // use for run h2 tag
+            runh.style.transition = "left 1s"
+            runh.style.left = "74vw"
+            // Use for arrow 
+            const time = setTimeout(() => {
+                arrow.style.visibility = "visible"
+                arrow.style.left = "46vw"
+            },600)
+        }
+        // use for mouseout
+        strength.onmouseout = () => {
+            // strength animation remove
+            strength.style.animationName = "strengthanimation2"
+            strength.style.animationDuration = "1s"
+            strength.style.width = "20vw"
+            // Mobility animation remove
+            mobility.style.animationName = "right"
+            mobility.style.animationDuration = "1s"
+            mobility.style.left = "20vw"
+            mobility.style.width = "20vw"
+            // Run animation remove
+            run.style.animationName = "right2"
+            run.style.animationDuration = "1s"
+            run.style.left = "40vw"
+            run.style.width = "50vw"
+            mobility.style.transition = "left 1s"
+            //user for mobility h2 tag
+            mobilityh.style.left = "24vw"
+            // use for run h2 tag
+            runh.style.transition = "left 1s"
+            runh.style.left = "44vw"
+            // use for remove arrow visibility
+            arrow.style.visibility = "hidden"
+        }
+        mobility.onmouseover = () => {
+            // use for mobility animation
+            mobility.style.animationName = "mobilityanimation"
+            mobility.style.animationDuration = "1s"
+            mobility.style.width = "50vw"
+            strength.style.width = "20vw"
+            strength.style.left = "0vw"
+            // use for style animation
+            run.style.animationName = "left2"
+            run.style.animationDuration = "1s"
+            run.style.width = "20vw"
+            run.style.left = "70vw"
+            // use for run h2 tag
+            runh.style.transition = "left 1s"
+            runh.style.left = "74vw"
+            // use for arrow icon
+            const mobilitytimeout = setTimeout(() => {
+                arrow.style.left = "66vw"
+                arrow.style.visibility = "visible"
+            },600)
+        }
+        mobility.onmouseout = () => {
+            // use for remove the mobility animation
+            mobility.style.animationName = "mobilityanimation2"
+            mobility.style.animationDuration = "1s"
+            mobility.style.width = "20vw"
+            strength.style.width = "20vw"
+            // use for run animation
+            run.style.animationName = "runanimation"
+            run.style.animationDuration = "1s"
+            run.style.width = "50vw"
+            run.style.left = "40vw"
+            // use for run h2 tag
+            runh.style.transition = "left 1s"
+            runh.style.left = "44vw"
+            // use for remove arrow visibility
+            arrow.style.visibility = "hidden"
+        }
+        run.onmouseover = () => {
+            // use for run animation
+            run.style.animationName = "runanimation"
+            run.style.animationDuration = "1s"
+            run.style.width = "50vw"
+            run.style.left = "40vw"
+            // use for run h2 tag
+            runh.style.transition = "left 1s"
+            runh.style.left = "44vw"
+            arrow.style.left = "86vw"
+            // use for arrow icon
+            arrow.style.visibility = "visible"
+        }
+        run.onmouseout = () => {
+            run.style.width = "50vw"
+            run.style.left = "40vw"
+            arrow.style.visibility = "hidden"
+        }
+    </script>
+</body>
+</html>
